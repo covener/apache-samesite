@@ -22,3 +22,10 @@ Then send some test requests varying the user-agent:
     # No change to FOO1 and FOO2 since this is an interolerant one!
     wget -qS -U "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/60.0.696.34 Safari/534.24." http://localhost
     wget -qS -U "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/69.0.696.34 Safari/534.24." http://localhost
+
+
+## Why mod_rewrite?
+It would be nice to remove the per-vhost stuff by using the modern features, but 
+my users need this for Apache 2.2 which means no mod_lua, `<if>` or `Header ... expr=...`
+
+
