@@ -29,3 +29,6 @@ It would be nice to remove the per-vhost stuff by using the modern features, but
 my users need this for Apache 2.2 which means no mod_lua, `<if>` or `Header ... expr=...`
 
 
+## Why not whitelist browsers?
+
+Chrome UA strings are complicated when considering e.g. mobile: https://developer.chrome.com/multidevice/user-agent
