@@ -12,6 +12,9 @@ You can simulate some headers easily by setting globally:
 
     Header always add Set-Cookie FOO1=BAR
     Header always add Set-Cookie "FOO2=BAZ; Domain=example.com"
+    Header always add Set-Cookie "FOO2a=BAZ;Domain=example.com; SECURE"
+    Header always add Set-Cookie "FOO2b=BAZ; Domain=example.com; SECURE  "
+    Header always add Set-Cookie "FOO2c=BAZ; SECURE; Domain=example.com "
     Header always add Set-Cookie "FOO3=BAZ; Domain=example.com ; SameSite=Strict"
     Header always add Set-Cookie "FOO4=BAZ; Domain=example.com ; SAMESITE=Strict"
 
