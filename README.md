@@ -26,12 +26,14 @@ Then send some test requests varying the user-agent:
     wget -qS -U "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/60.0.696.34 Safari/534.24." http://localhost
     wget -qS -U "Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/534.24 (KHTML, like Gecko) Chrome/69.0.696.34 Safari/534.24." http://localhost
 
+## Why not <If>
 
-## Why mod_rewrite?
-It would be nice to remove the per-vhost stuff by using the modern features, but 
-my users need this for Apache 2.2 which means no mod_lua, `<if>` or `Header ... expr=...`
-
+I need Apache 2.2 support.
 
 ## Why not whitelist browsers?
 
 Chrome UA strings are complicated when considering e.g. mobile: https://developer.chrome.com/multidevice/user-agent
+
+## How old are the intolerant browsers?
+
+The intolerant browsers 
