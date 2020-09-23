@@ -3,8 +3,9 @@ This repo contains snippets useful for the SameSite cookie migration happening i
 
 ## Config
 
-Read the two *.conf files in this repo. It assumes you just want to temporarily slap SameSite=none
-on every Set-Cookie without a SameSite parameter, but you can obviously match certain cookie names.
+Review the config file in this repo. It assumes you just want to temporarily slap SameSite=none
+on every Set-Cookie without a SameSite parameter, but has some additional examples including/excluding
+specific cookie names.
 
 ## Testing
 
@@ -34,6 +35,3 @@ I need Apache 2.2 support.
 
 Chrome UA strings are complicated when considering e.g. mobile: https://developer.chrome.com/multidevice/user-agent
 
-## How old are the intolerant browsers?
-
-The intolerant browsers 
